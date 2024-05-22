@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p class="card__gender">пол: ${res.gender}</p>
                         <p class="card__location">страна: ${res.location.country}</p>
                         <p class="card__location">город: ${res.location.city}</p>
-                        <p class="card__email">телефон: ${res.phone}</p>
-                        <p class="card__email">email: ${res.email}</p>
+                        <p>телефон: <a href="tel:+${res.phone}" class="card__phone">${res.phone}</a></p>
+                        <p>email: <a href="mailto:${res.email}" class="card__email">${res.email}</a></p>
                     </div>
                 `);
                 })
