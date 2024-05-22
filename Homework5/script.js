@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(response => response.json())
                 .then(data => {
                     const res = data.results[0];
-                    console.log(res);
                     divContent.insertAdjacentHTML('beforeend', `
                     <div class="card">
                         <img class="card__photo" src="${res.picture.large}"></img>
